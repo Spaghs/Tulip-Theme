@@ -1,0 +1,10 @@
+@theme "/usr/share/rofi/themes/tulip.rasi"
+
+configuration {
+
+  filebrowser {
+    directory: "/Spagh";
+    directories-first: true;
+  }
+
+}

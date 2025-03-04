@@ -1,0 +1,155 @@
+/*************************
+ *                       *
+ *       ROFI Theme      *
+ *                       *
+ *         Tulip         *
+ *        by Spagh       *
+ *                       *
+ *************************/
+
+* {
+  background-color: transparent;
+  text-color: #FAC;
+  text-outline: true;
+  text-outline-width: 3px;
+  text-outline-color: #A68;
+}
+
+configuration {
+  modi: "drun,run,filebrowser";
+  show-icons: true;
+  display-drun: " Apps";
+  display-run: " Run";
+  display-filebrowser: " Files";
+}
+
+window {
+  fullscreen: false;
+  background-color: #645D;
+  padding: 2em;
+  children: [mainbox];
+  orientation: vertical;
+  border: 5px;
+  border-color: #FAC;
+  border-radius: 15px;
+}
+
+mainbox {
+  spacing: 5px;
+  children: [mode-switcher, inputbar, listview, horibox];
+}
+
+mode-switcher {
+  background-color: #0008;
+  border: 5px;
+  border-color: #FAC;
+  border-radius: 15px 15px 0 0;
+  padding: 10px 20px;
+}
+
+button {
+  background-color: #FEF;
+  border: 5px;
+  border-radius: 10px;
+  border-color: #FAC;
+  cursor: pointer;
+}
+
+button selected {
+  border-color: #FAC;
+  text-color: #D8A;
+  background-color: #FAC;
+}
+
+inputbar {
+  background-color: #FEF;
+  border: 5px;
+  border-color: #FAC;
+  padding: 0;
+  children: [prompt, entry];
+}
+
+listview {
+  expand: true;
+  background-color: #0008;
+  scrollbar: true;
+  scrollbar-width: 5px;
+  spacing: 0;
+  padding: 0 0 0 40px;
+  flow: horizontal;
+  columns: 3;
+  lines: 10;
+}
+
+horibox {
+  expand: false;
+  orientation: horizontal;
+  lines: 1;
+  children: [textbox-custom];
+}
+
+textbox-custom {
+  expand: true;
+  content: "󰧱";
+  font: "Meslo_Nerd_Font 20";
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  border: 5px;
+  border-color: #FAC;
+  border-radius: 0 0 15px 15px;
+  background-color: #0008;
+}
+
+scrollbar {
+  background-color: #FAC;
+  border: 0 0 0 5px;
+  border-color: #FAC;
+  handle-width: 5px;
+  handle-color: #FEF;
+  margin: 0 0 0 40px;
+}
+
+listview, inputbar {
+  border: 5px;
+  border-color: #FAC;
+}
+
+prompt {
+  padding: 5px;
+  border: 0 3px 0 0;
+  border-color: #FAC;
+  border-radius: 5px;
+}
+
+entry {
+  padding: 5px;
+  vertical-align: 0.5;
+  cursor: text;
+}
+
+element {
+  padding: 10px 20px;
+  expand: true;
+  children: [element-icon, element-text];
+  cursor: pointer;
+}
+
+element-icon {
+  size: 40px;
+  horizontal-align: 0.5;
+  cursor: pointer;
+}
+
+element-text {
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+  cursor: pointer;
+}
+
+element selected{
+  background-color: #FEF;
+  border: 2px;
+  border-color: #FAC;
+  border-radius: 10px;
+}
+
