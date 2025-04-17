@@ -25,7 +25,7 @@ configuration {
 
 window {
   fullscreen: false;
-  background-color: #645D;
+  background-color: #0004;
   padding: 2em;
   children: [mainbox];
   orientation: vertical;
@@ -40,7 +40,7 @@ mainbox {
 }
 
 mode-switcher {
-  background-color: #0008;
+  background-color: #C8A8;
   border: 5px;
   border-color: #FAC;
   border-radius: 15px 15px 0 0;
@@ -71,7 +71,7 @@ inputbar {
 
 listview {
   expand: true;
-  background-color: #0008;
+  background-color: #0006;
   scrollbar: true;
   scrollbar-width: 5px;
   spacing: 0;
@@ -97,7 +97,7 @@ textbox-custom {
   border: 5px;
   border-color: #FAC;
   border-radius: 0 0 15px 15px;
-  background-color: #0008;
+  background-color: #C8A8;
 }
 
 scrollbar {
