@@ -3,7 +3,7 @@
 configuration {
 
   filebrowser {
-    directory: "/$HOME";
+    directory: "/Spagh";
     directories-first: true;
   }
 
