@@ -3,7 +3,7 @@
 configuration {
 
   filebrowser {
-    directory: "/Spagh";
+    directory: "~";
     directories-first: true;
   }
 
